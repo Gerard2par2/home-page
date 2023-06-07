@@ -9,4 +9,5 @@ export type TodoListProps = {
 export type TodoProps = {
     id: number;
     text: string;
+    isCompleted?: boolean
 }

@@ -11,12 +11,12 @@ export default function TodoList({className}: TodoListProps) {
 
     useEffect(()=>{
         setTodoList([
-            {id: 1, text: 'Faire les courses', isCompleted: false},
+            {id: 1, text: 'Faire les courses', isCompleted: true},
         ])
     }, []);
 
     return(
-        <div className={className}>
+        <div className={className+' p-2'}>
             { todoList.map((todoItem, key) => {
                 return <TodoItem key={key} {...todoItem}></TodoItem>
             })}

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.homeRoot {
+  --bg-rotation: 45deg;
+  display: flex;
+  background: linear-gradient(var(--bg-rotation), rgb(26, 116, 168) 0%, rgb(77, 101, 209) 35%, rgb(39, 70, 209) 50%, rgb(166, 47, 221) 75% ,rgb(223, 39, 109) 100%);
+  background-size: 400% 400%;
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  animation: bg-position 25s ease infinite;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+  border: solid 1px rgba(255,255,255,0.2);
+  border-radius: 0.5em;
+  background-color: rgba(255,255,255,0.04);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: inset 0px 0px 15px rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
+  border: solid 1px rgba(0,0,0,0.2);
+  transition: all 0.5s ease-in-out;
+  scale: 1.05;
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dateTimeContainer {
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.time {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  color: rgba(255,255,255,0.8);
+}

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { ClockProps } from '../../types/Props.type'
 import { MonthUtil } from '../../utils/Month.util';
 
-export default function DateTime({className}: ClockProps) {
+export default function Clock({className}: ClockProps) {
 
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')

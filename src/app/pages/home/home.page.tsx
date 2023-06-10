@@ -1,5 +1,5 @@
-import DateTime from '../../components/Clock/DateTime';
-import TodoList from '../../components/TodoList/TodoList';
+import DateTime from '../../components/Clock/clock';
+import TodoList from '../../components/todo/todo-list/todo.list';
 
 export default function HomePage() {
 

@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { TodoProps } from "../../types/Props.type";
+import { TodoProps } from "../../../../types/Props.type";
 
 export default function TodoItem({id, text, isCompleted}: TodoProps) {
 
@@ -13,7 +13,7 @@ export default function TodoItem({id, text, isCompleted}: TodoProps) {
     };
 
     return (
-        <div className='todo-item '>
+        <div className='todo-item'>
             <label className="flex items-center space-x-2">
                 <input checked={isChecked} onChange={handleInputChange} type="checkbox" />
                 <span className="checkbox"></span>
